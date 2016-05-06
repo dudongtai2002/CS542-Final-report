@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 MAY 2016 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 MAY 2016 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -646,8 +646,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
 (./nips_2016.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
-Package rerunfilecheck Info: File `nips_2016.out' has not changed.
-(rerunfilecheck)             Checksum: 305A64A33810985693FE10985105B16A;941.
+
+
+Package rerunfilecheck Warning: File `nips_2016.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `nips_2016.out':
+(rerunfilecheck)             Before: 305A64A33810985693FE10985105B16A;941
+(rerunfilecheck)             After:  B423AB54522B6A2B5C2E0F919070F7E3;931.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
  ) 
 Here is how much of TeX's memory you used:
@@ -671,7 +681,7 @@ xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/f
 onts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on nips_2016.pdf (5 pages, 142340 bytes).
+Output written on nips_2016.pdf (5 pages, 142328 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
