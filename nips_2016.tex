@@ -133,33 +133,12 @@ summarized in Sections \ref{gen_inst}, \ref{headings}, and
 
 \section{Network Architectures}
 \label{gen_inst}
-	Inspired by LearningTypographic Style(italics), we started our project first focusing on learning creating one specific English character from four input letters of the same style. In the last version of our program, we use six layers in total, including two convolutional layers and four fully connected layers. 
-	The pooling sizes for convolutional layers are (2,2). Filter size for first convolutional layer is 3*3, and for the second layer is 4*4.
-	The nodes of each fully connected layer are 50.
+	For the font generating neural network, we started our project first focusing on learning creating one specific English character from four input letters of the same style. In the latest version of our program, we use six layers in total, including two convolutional layers and four fully connected layers. \\
+	The pooling sizes for convolutional layers are (2,2). Filter size for first convolutional layer is 3*3, and for the second layer is 4*4.\\
+	The nodes of each fully connected layer are 50.\\
+	First we decide the letters for the input use and output use, then draw them in a 36 * 36 image using black and white, and translate them into one dimensional vector with values 1s and 0s, which stands for black and white respectively. For each font, we use images of four letters from that font with resolution of 36 * 36 as inputs. Four letters go into first four convolutional layers separately, and into second convolutional layer as well. Then they converge into fully connected layers. In the end, the last hidden fully connected layer connects to the output layer, which has total 36 * 36 nodes, each one corresponding to one pixel of the output image. From practicing experience, we found that there is an interval of optimal training circle values which could allow the neural network behaves 'poorly' as a font style learner, while using the training circle beyond or below the training circle will result in serious overfitting or underfitting, which both give us static output values.\\
+	For the font recognition neural network, everything is the same except we use one node, 1 and 0, as output, which reflect true and falsity. Due to the complexity of the task assigned to this network, it does not work as expected. \\
 	
-
-The text must be confined within a rectangle 5.5~inches (33~picas)
-wide and 9~inches (54~picas) long. The left margin is 1.5~inch
-(9~picas).  Use 10~point type with a vertical spacing (leading) of
-11~points.  Times New Roman is the preferred typeface throughout, and
-will be selected for you by default.  Paragraphs are separated by
-\nicefrac{1}{2}~line space (5.5 points), with no indentation.
-
-The paper title should be 17~point, initial caps/lower case, bold,
-centered between two horizontal rules. The top rule should be 4~points
-thick and the bottom rule should be 1~point thick. Allow
-\nicefrac{1}{4}~inch space above and below the title to rules. All
-pages should start at 1~inch (6~picas) from the top of the page.
-
-For the final version, authors' names are set in boldface, and each
-name is centered above the corresponding address. The lead author's
-name is to be listed first (left-most), and the co-authors' names (if
-different address) are set to follow. If there is only one co-author,
-list both author and co-author side by side.
-
-Please pay special attention to the instructions in Section \ref{others}
-regarding figures, tables, acknowledgments, and references.
-
 \section{Headings: first level}
 \label{headings}
 
