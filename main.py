@@ -187,9 +187,9 @@ params = (layer4.params
           + layer10.params + layer11.params + layer12.params + layer13.params
           + layer00.params + layer01.params + layer02.params + layer03.params)
 
-cost = layer4.negative_log_likelihood(y) #+ lamb * theano.tensor.sum(np.sum(params)) # lamb and following term can be removed
+cost = layer6.negative_log_likelihood(y) #+ lamb * theano.tensor.sum(np.sum(params)) # lamb and following term can be removed
 
-error = ((y - layer4.y_pred)**2).sum()
+error = ((y - layer6.y_pred)**2).sum()
 
 grads = T.grad(cost, params)
 
