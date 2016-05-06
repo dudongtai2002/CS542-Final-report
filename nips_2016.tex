@@ -68,12 +68,18 @@
 \maketitle
 
 \begin{abstract}
-  Font is a unique art form that owns special value which affect our perception and understanding. We believe that it is possible to train a neural network to learn the typographic style of both english and chinese characters. In this report, we created multiple neural networks, quantitatively measure the results in a variety of novel manners, and present a thorough analysis of the approach
+  Font is a unique art form that owns special value which affect our perception and understanding. We believe that it is possible to train a neural network to learn the typographic style of both english and chinese characters. In this report, we created multiple neural networks, quantitatively measure the results in a variety of novel manners, and present a thorough analysis of the approach.
 \end{abstract}
 
 \section{Introduction}
 
-The history of fonts and typography is vast, which could date back to mid-15th-century in Europe and Han dynasty in China (206B.C.-220A.D.).
+  \ \ \ \ \ \ The history of fonts and typography is vast, which could date back to mid-15th-century in Europe and Han dynasty in China (206B.C.-220A.D.). Nowadays, numerous fonts have been created by individual designers, mostly used as hobbies, or for particular applications such as logos, movies or advertisements. A small sample of over 10,000 English fonts [1] and over 100 Chinese fonts [2], both are in True-Type-Font format(TTF).
+  
+  
+   \ \ \ \ \ \ The original idea of this project was inspired by the work of Gatys etc.[3]. The used Convolutional Neural Network(cNN) to obtain the representation of the style of an input image, which could used for convert other image into the captured style. Our motivation and goals are somehow similar: we hope to train a multi-layer cNN so that it could acquire the style of a font, as well as distinguish between characters in different font. In other words, Given a set of basis letters in font $A$, and another letter $\Phi$, the network is asked to output a value 0 or 1 to indicate whether they are in the same font(1) or not(0). Moreover, the network is also asked to generate the given letter $\Phi$ in the same font $A$.
+   
+   
+   ~~~~~~as
 
 \subsection{Style}
 
@@ -355,36 +361,16 @@ A number of width problems arise when \LaTeX{} cannot properly
 hyphenate a line. Please give LaTeX hyphenation hints using the
 \verb+\-+ command when necessary.
 
-\subsubsection*{Acknowledgments}
-
-Use unnumbered third level headings for the acknowledgments. All
-acknowledgments go at the end of the paper. Do not include
-acknowledgments in the anonymized submission, only in the final paper.
-
 \section*{References}
 
-References follow the acknowledgments. Use unnumbered first-level
-heading for the references. Any choice of citation style is acceptable
-as long as you are consistent. It is permissible to reduce the font
-size to \verb+small+ (9 point) when listing the references. {\bf
-  Remember that you can use a ninth page as long as it contains
-  \emph{only} cited references.}
-\medskip
+
 
 \small
 
-[1] Alexander, J.A.\ \& Mozer, M.C.\ (1995) Template-based algorithms
-for connectionist rule extraction. In G.\ Tesauro, D.S.\ Touretzky and
-T.K.\ Leen (eds.), {\it Advances in Neural Information Processing
-  Systems 7}, pp.\ 609--616. Cambridge, MA: MIT Press.
+[1] https://drive.google.com/file/d/0B9nLg9RyBPkqU1hjcnFUZGxjXzg/view?usp=sharing
 
-[2] Bower, J.M.\ \& Beeman, D.\ (1995) {\it The Book of GENESIS:
-  Exploring Realistic Neural Models with the GEneral NEural SImulation
-  System.}  New York: TELOS/Springer--Verlag.
+[2] https://drive.google.com/file/d/0B9nLg9RyBPkqOWxBV0VBWkFleVE/view?usp=sharing
 
-[3] Hasselmo, M.E., Schnell, E.\ \& Barkai, E.\ (1995) Dynamics of
-learning and recall at excitatory recurrent synapses and cholinergic
-modulation in rat hippocampal region CA3. {\it Journal of
-  Neuroscience} {\bf 15}(7):5249-5262.
+[3] Gatys, Leon A., Alexander S. Ecker, and Matthias Bethge. "A neural algorithm of artistic style." arXiv preprint arXiv:1508.06576 (2015).
 
 \end{document}
