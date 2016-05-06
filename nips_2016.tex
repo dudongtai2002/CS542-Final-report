@@ -20,7 +20,7 @@
 \usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
-
+\usepackage{authblk}
 \title{Learning font style using neural networks}
 
 % The \author macro works with any number of authors. There are two
@@ -33,7 +33,13 @@
 % on the second line, try using \AND instead of \And before the third
 % author name.
 
-\author{Zhifan Yin \And Dongtai Du \And Xiao Sheng
+\author[1]{ David S.~Hippocampus\thanks{Use footnote for providing further
+    information about author (webpage, alternative
+    address)---\emph{not} for acknowledging funding agencies.} \\
+  Department of Computer Science\\
+  Cranberry-Lemon University\\
+  Pittsburgh, PA 15213 \\
+  \texttt{hippo@cs.cranberry-lemon.edu} \\
   %% examples of more authors
   %% \And
   %% Coauthor \\
@@ -55,34 +61,19 @@
   %% Affiliation \\
   %% Address \\
   %% \texttt{email} \\
-}
-
+  }
 \begin{document}
 % \nipsfinalcopy is no longer used
 
 \maketitle
 
 \begin{abstract}
-  The abstract paragraph should be indented \nicefrac{1}{2}~inch
-  (3~picas) on both the left- and right-hand margins. Use 10~point
-  type, with a vertical spacing (leading) of 11~points.  The word
-  \textbf{Abstract} must be centered, bold, and in point size 12. Two
-  line spaces precede the abstract. The abstract must be limited to
-  one paragraph.
+  Font is a unique art form that owns special value which affect our perception and understanding. We believe that it is possible to train a neural network to learn the typographic style of both english and chinese characters. In this report, we created multiple neural networks, quantitatively measure the results in a variety of novel manners, and present a thorough analysis of the approach
 \end{abstract}
 
-\section{Submission of papers to NIPS 2016}
+\section{Introduction}
 
-\textbf{There is a new style file for papers submitted in 2016!}
-
-NIPS requires electronic submissions.  The electronic submission site
-is
-\begin{center}
-  \url{https://cmt.research.microsoft.com/NIPS2016/}
-\end{center}
-
-Please read carefully the instructions below and follow them
-faithfully.
+The history of fonts and typography is vast, which could date back to mid-15th-century in Europe and Han dynasty in China (206B.C.-220A.D.).
 
 \subsection{Style}
 
